@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import myPhoto from "../assets/ag-img.png";
 import { motion } from "framer-motion";
 const part1 = "I'm";
@@ -122,20 +123,24 @@ const Home = () => {
           adapt, and bring ideas to life through technology.
         </p>
         <div className="w-full flex gap-10 mt-4 px-5">
-          <motion.button
-            whileHover={buttonHover}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gray-900 py-2 px-6 rounded-xl shadow-sm shadow-gray-200 hover:bg-gray-800 hover:shadow-green-200 hover:text-green-200 hover:shadow-md transition-all duration-700"
-          >
-            More Infos About Me
-          </motion.button>
-          <motion.button
-            whileHover={buttonHover}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gray-900 py-2 px-6 rounded-xl shadow-sm shadow-gray-200 hover:shadow-green-200 hover:text-green-200 hover:shadow-md transition-all duration-700"
-          >
-            My Projects
-          </motion.button>
+          <NavLink to="/about">
+            <motion.button
+              whileHover={buttonHover}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gray-900 py-2 px-6 rounded-xl shadow-sm shadow-gray-200 hover:bg-gray-800 hover:shadow-green-200 hover:text-green-200 hover:shadow-md transition-all duration-700"
+            >
+              More Infos About Me
+            </motion.button>
+          </NavLink>
+          <NavLink to="/projects">
+            <motion.button
+              whileHover={buttonHover}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gray-900 py-2 px-6 rounded-xl shadow-sm shadow-gray-200 hover:shadow-green-200 hover:text-green-200 hover:shadow-md transition-all duration-700"
+            >
+              My Projects
+            </motion.button>
+          </NavLink>
         </div>
       </motion.div>
     </div>
