@@ -3,6 +3,7 @@ import { Suspense, lazy } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
+import NotFound from "./components/NotFound";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
@@ -31,6 +32,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </div>
