@@ -89,8 +89,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full mt-3 flex justify-center fixed h-max">
-        <div className="h-[58px] w-9/12 p-2 rounded-2xl border bg-black/10 backdrop-blur-md z-50 pointer-events-auto mt-4 mx-auto flex sticky transform-gpu justify-between gap-0.5 px-1  [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] sm:gap-1 md:gap-2 items-center">
+      <div className="w-full mt-3 flex justify-center fixed h-max z-50">
+        <div className="h-[58px] w-11/12 md:w-9/12 p-2 rounded-2xl border bg-black/10 backdrop-blur-md z-50 pointer-events-auto mt-4 mx-auto flex sticky transform-gpu justify-between gap-0.5 px-1  [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] sm:gap-1 md:gap-2 items-center">
           <div
             className="cursor-pointer"
             onMouseEnter={() => setShowTooltip(true)}
@@ -209,7 +209,7 @@ const Navbar = () => {
                   ))}
 
                   <motion.div
-                    className="absolute bottom-36 w-full px-12"
+                    className="absolute top-56 w-full px-12"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.4 }}
