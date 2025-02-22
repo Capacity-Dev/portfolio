@@ -104,7 +104,7 @@ const Navbar = () => {
                 </span>
               </NavLink>
               <div className="font-mono inline-flex items-center">
-                <span className="text-gray-200"> ~/ </span>
+                <span className="text-gray-200"> ~/ </span>
                 {/* Display typed text */}
                 <motion.span
                   className="text-gray-300 font-thin text-sm"
@@ -219,7 +219,7 @@ const Navbar = () => {
                     </h3>
                     <div className="flex gap-6">
                       <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/capacity-dev"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 hover:text-green-300 transition-all duration-300"
